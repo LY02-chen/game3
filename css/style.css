@@ -1,0 +1,88 @@
+#gamemenu { 
+    margin-top: 0; 
+    margin-bottom: 0.5em; 
+    text-align: center;
+    font-size: 20px;
+}
+
+#gamemenu ul {
+    list-style: none;
+    display: inline;
+    position: relative;
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+#gamemenu ul li {
+    font-weight: bold; font-size: 0.8em;
+    padding-left: 0.75em; padding-right: 0.75em;
+    padding-top: 0.2em; padding-bottom: 0.2em;
+    margin: 0;
+    display: inline;
+    cursor: default;
+    border-left: 0;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+#gamemenu ul li.separator {
+    color: transparent;
+    border: 0;
+}
+
+#gamemenu ul li.afterseparator {
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+#gamemenu ul li:first-of-type {
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+#gamemenu ul li:hover {
+    background: rgba(0,0,0,0.3);
+    position: relative;
+}
+
+#gamemenu ul li.separator:hover {
+    background: #fff;
+    position: relative;
+}
+
+#gamemenu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    z-index: 1;
+}
+
+#gamemenu ul ul li {
+    display: block;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 100%;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.3);
+    border-top: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+#gamemenu ul ul li:first-of-type {
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+#gamemenu ul li:hover > ul {
+    display: block;
+}
+
+#gametype li span {
+    color: transparent;
+    padding-right: 0.5em;
+}
+
+canvas {
+    display: block;
+}

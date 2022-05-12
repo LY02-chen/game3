@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game3</title>
+
+    <script defer src="js/constants.js"></script>
+    <script defer src="js/draw.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/mouseEvent.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onselectstart="return false;" oncontextmenu="return false;">
+    <div id="puzzle" style="display: inline;">
+        <div id="gamemenu">
+            <ul>
+                <li>Type...
+                    <ul id="gametype">
+                        <li data-index="0"><span style="color: inherit;">✓</span>9x9, 10 mines</li>
+                        <li data-index="1"><span>✓</span>9x9, 35 mines</li>
+                        <li data-index="2"><span>✓</span>16x16, 40 mines</li>
+                        <li data-index="3"><span>✓</span>16x16, 99 mines</li>
+                        <li data-index="4"><span>✓</span>30x16, 99 mines</li>
+                        <li data-index="5"><span>✓</span>30x16, 170 mines</li>
+                        <li data-index="-1"><span>✓</span>Custom</li>
+                    </ul>
+                </li>
+                <li class="separator"></li><li id="new" class="afterseparator">New game</li><li id="solve">Solve game</li>
+            </ul>
+        </div>
+        <div align="center">
+            <canvas id="puzzlecanvas" style="background: #e0e0e0"></canvas>
+            <div id="statusbarhold" style="background: #d0d0d0; text-align: left; font-size: 20px;"></div>
+        </div>
+    </div>
+</body>
+</html>
