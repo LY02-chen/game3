@@ -17,6 +17,7 @@ const color = {
 
 const padding = 30,
       gridSize = 20;
+      
 const step = [
     [-1, -1], [-1, 0], [-1, 1],
     [0, -1], [0, 1],
